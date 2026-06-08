@@ -1,7 +1,11 @@
-import React from 'react'
+import Hero from "../components/Hero";
+import ProductGrid from "../components/ProductGrid";
 
-export const Home = () => {
+export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <Hero />
+      <ProductGrid />
+    </>
+  );
 }

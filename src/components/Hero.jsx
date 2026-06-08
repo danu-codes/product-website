@@ -1,41 +1,77 @@
-import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="pt-28 pb-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <section className="relative pt-28 pb-20 overflow-hidden bg-white dark:bg-gray-950">
 
-        {/* Left */}
+      {/* Background glow */}
+      <div className="absolute inset-0">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/20 blur-3xl rounded-full" />
+        <div className="absolute bottom-20 right-10 w-72 h-72 bg-cyan-500/20 blur-3xl rounded-full" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-10 items-center">
+
+        {/* Left Content */}
         <div>
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Modern Product Showcase for Any Business
+
+          <span className="px-4 py-2 text-sm rounded-full border dark:border-gray-700">
+            Premium Product Platform
+          </span>
+
+          <h1 className="text-4xl md:text-5xl font-bold mt-6 leading-tight text-gray-900 dark:text-white">
+            Build & Showcase Any <br />
+            Product Business Easily
           </h1>
 
-          <p className="mt-5 text-gray-600 dark:text-gray-400 leading-relaxed">
-            A fully reusable React + Tailwind system designed for companies
-            that want a clean, scalable, and professional product platform.
+          <p className="mt-5 text-gray-500 dark:text-gray-400">
+            A reusable React system that can transform into juice shop,
+            perfume store, electronics store or any product business.
           </p>
 
-          <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 bg-black text-white dark:bg-white dark:text-black rounded-xl flex items-center gap-2">
-              Explore Products <ArrowRight size={16} />
-            </button>
+          <div className="flex gap-4 mt-8">
+            <Link
+              to="/products"
+              className="px-6 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition"
+            >
+              Explore Products
+            </Link>
 
-            <button className="px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-xl">
-              Contact Sales
-            </button>
+            <Link
+              to="/contact"
+              className="px-6 py-3 rounded-xl border dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900 transition"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Stats */}
+          <div className="flex gap-8 mt-10 text-sm text-gray-500">
+            <div>
+              <p className="text-xl font-bold text-black dark:text-white">500+</p>
+              Products
+            </div>
+
+            <div>
+              <p className="text-xl font-bold text-black dark:text-white">35+</p>
+              Countries
+            </div>
+
+            <div>
+              <p className="text-xl font-bold text-black dark:text-white">10K+</p>
+              Customers
+            </div>
           </div>
         </div>
 
-        {/* Right Image Card */}
+        {/* Right Image */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl rounded-3xl"></div>
-
           <img
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789"
-            className="relative rounded-2xl shadow-2xl"
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+            className="rounded-2xl shadow-2xl w-full"
           />
         </div>
+
       </div>
     </section>
   );

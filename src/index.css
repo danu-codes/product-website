@@ -21,3 +21,16 @@ body {
   background: #888;
   border-radius: 8px;
 }
+
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* smoother UI feel */
+* {
+  @apply transition-colors duration-200;
+}

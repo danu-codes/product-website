@@ -1,16 +1,199 @@
-# React + Vite
+# ProductX - Reusable Product Showcase Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive product showcase website built with React and Tailwind CSS. This project is designed as a reusable template that can be customized for any product-based business such as juice shops, perfume stores, electronics companies, healthcare products, and more.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive design for mobile, tablet, and desktop
+- Dark/Light theme support
+- Product listing with search and filtering
+- Product details page
+- Contact form with EmailJS integration
+- Modern UI built with Tailwind CSS
+- Reusable and scalable architecture
+- React Router navigation
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- React Router DOM
+- Tailwind CSS
+- EmailJS
+- Lucide React Icons
+- Framer Motion (optional animations)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Demo
+
+Demo Link:
+
+https://your-demo-link.com
+
+---
+
+## Screenshots
+
+### Home Page
+
+![Home](image.png)
+
+### Product Listing
+
+![Product](image-1.png)
+
+### Product Details
+
+![Product Details](image-2.png)
+
+### Contact Page
+
+![alt text](image-3.png)
+---
+
+## Project Structure
+
+```text
+src
+│
+├── components
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── ProductCard.jsx
+│   ├── ProductGrid.jsx
+│   ├── CategoriesSection.jsx
+│   └── Footer.jsx
+│
+├── pages
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetails.jsx
+│   ├── Contact.jsx
+│   └── About.jsx
+│
+├── layouts
+│   └── MainLayout.jsx
+│
+├── routes
+│   └── AppRoutes.jsx
+│
+├── context
+│   └── ThemeContext.jsx
+│
+├── config
+│   └── siteConfig.js
+│
+├── data
+│   └── products.js
+│
+├── assets
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/productx.git
+```
+
+Navigate into the project:
+
+```bash
+cd productx
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
+## Customization
+
+This template is designed to be easily adapted to different businesses.
+
+### Update Products
+
+Edit:
+
+```text
+src/data/products.js
+```
+
+### Update Branding
+
+Edit:
+
+```text
+src/config/siteConfig.js
+```
+
+Examples:
+
+- Juice Store
+- Perfume Store
+- Electronics Store
+- Healthcare Products
+- Industrial Products
+- Startup Product Showcase
+
+---
+
+## Contact Form Setup
+
+This project uses EmailJS.
+
+1. Create an EmailJS account
+2. Connect Gmail service
+3. Create an Email Template
+4. Replace:
+
+```js
+SERVICE_ID
+TEMPLATE_ID
+PUBLIC_KEY
+```
+
+inside:
+
+```text
+src/pages/Contact.jsx
+```
+
+---
+
+## Future Improvements
+
+- Product image gallery
+- Product reviews
+- Advanced filtering
+- SEO optimization
+- Backend integration
+- Admin dashboard
+
+---
+
+## Author
+
+Developed using React and Tailwind CSS.
