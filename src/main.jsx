@@ -9,7 +9,7 @@ import { ThemeProvider } from './components/context/ThemeContext.jsx'
 createRoot(document.getElementById('root')).render(
   
   <ThemeProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/product-website">
     <App />
     </BrowserRouter>
   </ThemeProvider>,
