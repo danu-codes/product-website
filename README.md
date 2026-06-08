@@ -28,7 +28,7 @@ A modern, responsive product showcase website built with React and Tailwind CSS.
 
 Demo Link:
 
-https://your-demo-link.com
+https://danu-codes.github.io/product-website/
 
 ---
 
@@ -60,8 +60,7 @@ src
 │   ├── Navbar.jsx
 │   ├── Hero.jsx
 │   ├── ProductCard.jsx
-│   ├── ProductGrid.jsx
-│   ├── CategoriesSection.jsx
+│   ├── ProductGrid.jsx 
 │   └── Footer.jsx
 │
 ├── pages
@@ -100,13 +99,14 @@ src
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/productx.git
+git clone   "homepage": "https://github.com/danu-codes/product-website.git",
+
 ```
 
 Navigate into the project:
 
 ```bash
-cd productx
+cd product-website
 ```
 
 Install dependencies:
