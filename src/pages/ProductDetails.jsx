@@ -1,10 +1,15 @@
 import { useParams } from "react-router-dom";
 import { products } from "../data/products";
+import { useEffect } from "react";
 
 export default function ProductDetails() {
   const { id } = useParams();
-
   const product = products.find((p) => p.id === Number(id));
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   if (!product) {
     return (
