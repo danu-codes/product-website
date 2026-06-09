@@ -1,8 +1,13 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { useEffect } from "react";
 
 export default function Contact() {
   const form = useRef();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,7 +32,7 @@ export default function Contact() {
 
   return (
     <section className="min-h-screen pt-24 pb-16 bg-white dark:bg-gray-950 transition-colors">
-      
+
       <div className="max-w-5xl mx-auto px-6">
 
         {/* Title */}
